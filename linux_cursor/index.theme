@@ -1,0 +1,4 @@
+[Icon Theme]
+Name=Win11CrossHair
+Comment=Win11 crosshair style cursor (ice colored, busy animated)
+Inherits="hicolor"

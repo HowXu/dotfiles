@@ -6,7 +6,7 @@ Alacritty
 Gravel  
 Nushell  
 NeoVim  
-VIm  
+Vim  
 VSCodium  
 Starship  
 WezTerm  
