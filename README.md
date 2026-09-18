@@ -10,3 +10,7 @@ Vim
 VSCodium  
 Starship  
 WezTerm  
+Zshell  
+Niri  
+DMS  
+Cursor in Linxu Gnome
