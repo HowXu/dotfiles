@@ -1,0 +1,6 @@
+# 按目录保存的浏览偏好，含本机路径
+/pref-by-location
+
+# 私人远程挂载与设备记录
+/gvfs.private
+/gvfs_automounts.private

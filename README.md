@@ -10,6 +10,7 @@ Vim
 VSCodium  
 Starship  
 WezTerm  
+[Yazi](yazi/BACKUP.md)\
 Zshell  
 Niri  
 DMS  

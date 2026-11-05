@@ -1,0 +1,79 @@
+[mgr]
+ratio = [1, 5, 2]
+sort_by = "extension"
+sort_sensitive = true
+sort_reverse = false
+sort_dir_first = true
+show_hidden = true
+show_symlink = true
+linemode = "btime"
+scrolloff = 8
+
+[preview]
+wrap = "yes"
+image_filter = "lanczos3"
+max_size = 10485760
+
+# ================================
+# Plugin Fetchers
+# ================================
+[[plugin.prepend_fetchers]]
+url = "*"
+run = "git"
+group = "git"
+
+[[plugin.prepend_fetchers]]
+url = "*/"
+run = "git"
+group = "git"
+
+# ================================
+# Plugin Previewers
+# ================================
+[[plugin.prepend_previewers]]
+mime = "{audio,video,image}/*"
+run = "mediainfo"
+
+[[plugin.prepend_previewers]]
+mime = "application/subrip"
+run = "mediainfo"
+
+[[plugin.prepend_previewers]]
+mime = "application/postscript"
+run = "mediainfo"
+
+[[plugin.prepend_previewers]]
+mime = "application/bittorrent"
+run = "torrent-preview"
+
+[[plugin.prepend_previewers]]
+url = "*.{md,markdown,txt}"
+run = "mdv-previewer"
+
+
+# ================================
+# Plugin Preloaders
+# ================================
+[[plugin.prepend_preloaders]]
+mime = "{audio,video,image}/*"
+run = "mediainfo"
+
+[[plugin.prepend_preloaders]]
+mime = "application/subrip"
+run = "mediainfo"
+
+[[plugin.prepend_preloaders]]
+mime = "application/postscript"
+run = "mediainfo"
+
+[[plugin.prepend_preloaders]]
+url = "*.{md,markdown,txt}"
+run = "mdv-previewer"
+
+
+# ================================
+# Tasks
+# ================================
+[tasks]
+	image_alloc = 536870912  # = 512*1024*1024 = 512MB
+
