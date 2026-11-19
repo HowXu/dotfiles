@@ -8,7 +8,7 @@ decorations_theme_variant = "Light"
 [font]
 normal = { family = "Maple Mono NF CN", style = "Regular" }
 offset = { x = 1, y = 0 }
-size = 11.5
+size = 12.5
 
 [cursor]
 style = { shape = "Beam", blinking = "Always" }
