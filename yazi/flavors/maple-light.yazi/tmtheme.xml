@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0"><dict>
+<key>name</key><string>Maple light</string>
+<key>settings</key><array>
+<dict><key>settings</key><dict><key>foreground</key><string>#475569</string><key>background</key><string>#fffffe</string><key>selection</key><string>#e1e7dc</string><key>caret</key><string>#6e7e95</string></dict></dict>
+<dict><key>scope</key><string>comment, string.comment, comment.line, punctuation.definition.comment</string><key>settings</key><dict><key>foreground</key><string>#808080</string></dict></dict>
+<dict><key>scope</key><string>delimiter.bracket, delimiter, invalid.illegal.character-not-allowed-here.html, keyword.operator.rest, keyword.operator.spread, keyword.operator.type.annotation, keyword.operator.relational, keyword.operator.assignment, meta.tag.block.any.html, meta.tag.inline.any.html, meta.tag.structure.input.void.html, meta.type.annotation, meta.embedded.block.github-actions-expression, storage.type.function.arrow, keyword.operator.type, meta.objectliteral.ts</string><key>settings</key><dict><key>foreground</key><string>#71a3a8</string></dict></dict>
+<dict><key>scope</key><string>punctuation, meta.brace, meta.attribute punctuation.separator</string><key>settings</key><dict><key>foreground</key><string>#71a3a8</string></dict></dict>
+<dict><key>scope</key><string>punctuation.terminator, punctuation.separator</string><key>settings</key><dict><key>foreground</key><string>#8db5b9</string></dict></dict>
+<dict><key>scope</key><string>constant, support.constant, entity.name.constant, variable.language, meta.definition.variable</string><key>settings</key><dict><key>foreground</key><string>#c37522</string></dict></dict>
+<dict><key>scope</key><string>entity, entity.name, variable.parameter.function, meta.body.function.definition.special, support.function, meta.function, meta.function-call.python</string><key>settings</key><dict><key>foreground</key><string>#0585a8</string></dict></dict>
+<dict><key>scope</key><string>entity.name.tag, tag.html</string><key>settings</key><dict><key>foreground</key><string>#bd5151</string></dict></dict>
+<dict><key>scope</key><string>entity.name.function</string><key>settings</key><dict><key>foreground</key><string>#0585a8</string></dict></dict>
+<dict><key>scope</key><string>keyword, storage.type.java, entity.name.package, entity.name.import, keyword.operator.expression.infer, keyword.control.satisfies, keyword.control.as.ts</string><key>settings</key><dict><key>foreground</key><string>#726293</string></dict></dict>
+<dict><key>scope</key><string>storage.type.annotation.java</string><key>settings</key><dict><key>foreground</key><string>#0585a8</string><key>fontStyle</key><string></string></dict></dict>
+<dict><key>scope</key><string>storage, storage.type, support.type.builtin</string><key>settings</key><dict><key>foreground</key><string>#726293</string></dict></dict>
+<dict><key>scope</key><string>constant.language.undefined, constant.language.null, constant.language.nullptr</string><key>settings</key><dict><key>foreground</key><string>#a65973</string><key>fontStyle</key><string>italic</string></dict></dict>
+<dict><key>scope</key><string>support.type.primitive, support.type.builtin</string><key>settings</key><dict><key>fontStyle</key><string>bold</string></dict></dict>
+<dict><key>scope</key><string>string, string punctuation.section.embedded source, attribute.value, meta.attribute-selector.scss, entity.name.import.go</string><key>settings</key><dict><key>foreground</key><string>#478f14</string></dict></dict>
+<dict><key>scope</key><string>punctuation.definition.template-expression, punctuation.definition.template-string, punctuation.definition.string.template.begin, punctuation.definition.string.template.end, meta.fstring.python constant.character.format.placeholder, string.interpolated, meta.interpolation, punctuation.section.interpolation, punctuation.definition.template-expression</string><key>settings</key><dict><key>foreground</key><string>#127d52</string></dict></dict>
+<dict><key>scope</key><string>punctuation.definition.string, punctuation.support.type.property-name</string><key>settings</key><dict><key>foreground</key><string>#7eb05a</string></dict></dict>
+<dict><key>scope</key><string>entity.name.tag.yaml, meta.attribute entity, source.rust meta.attribute, entity.other.attribute-name, source.css support.type.property-name.media, entity.other.attribute-name.tsx, entity.other.attribute-name.js, entity.other.attribute-name.xml</string><key>settings</key><dict><key>foreground</key><string>#aa830e</string></dict></dict>
+<dict><key>scope</key><string>support</string><key>settings</key><dict><key>foreground</key><string>#8d8949</string></dict></dict>
+<dict><key>scope</key><string>property, meta.property-name, meta.member.access, meta.object-literal.key, attribute.name, variable.other.object.property, variable.other.property</string><key>settings</key><dict><key>foreground</key><string>#8d8949</string></dict></dict>
+<dict><key>scope</key><string>source.css support.type.property-name</string><key>settings</key><dict><key>foreground</key><string>#8d8949</string></dict></dict>
+<dict><key>scope</key><string>variable, identifier, constant.other.table-name, invalid.deprecated.entity.other.attribute-name.html, support.type.property-name.json, support.type.property-name.toml, support.type.property-name.array.toml, keyword.other.definition.ini, variable.other.normal.shell, meta.var</string><key>settings</key><dict><key>foreground</key><string>#aa830e</string></dict></dict>
+<dict><key>scope</key><string>support.type.primitive, entity.name.type.instance.jsdoc</string><key>settings</key><dict><key>foreground</key><string>#726293</string></dict></dict>
+<dict><key>scope</key><string>entity.name.type.parameter</string><key>settings</key><dict><key>foreground</key><string>#aa830e</string><key>fontStyle</key><string>bold</string></dict></dict>
+<dict><key>scope</key><string>entity.name.type.parameter.cpp, entity.name.type.ts</string><key>settings</key><dict><key>foreground</key><string>#c37522</string></dict></dict>
+<dict><key>scope</key><string>meta.type keyword.operator.expression.typeof, meta.type keyword.operator.expression.keyof</string><key>settings</key><dict><key>foreground</key><string>#726293</string><key>fontStyle</key><string>italic</string></dict></dict>
+<dict><key>scope</key><string>namespace</string><key>settings</key><dict><key>foreground</key><string>#a65973</string></dict></dict>
+<dict><key>scope</key><string>meta.type.annotation, support.type</string><key>settings</key><dict><key>foreground</key><string>#c37522</string></dict></dict>
+<dict><key>scope</key><string>keyword.operator, keyword.operator.assignment.compound, meta.var.expr.ts</string><key>settings</key><dict><key>foreground</key><string>#71a3a8</string></dict></dict>
+<dict><key>scope</key><string>invalid</string><key>settings</key><dict><key>foreground</key><string>#bd5151</string></dict></dict>
+<dict><key>scope</key><string>message.error</string><key>settings</key><dict><key>foreground</key><string>#bd5151</string></dict></dict>
+<dict><key>scope</key><string>string variable</string><key>settings</key><dict><key>foreground</key><string>#aa830e</string></dict></dict>
+<dict><key>scope</key><string>source.regexp, string.regexp</string><key>settings</key><dict><key>foreground</key><string>#478f14</string></dict></dict>
+<dict><key>scope</key><string>string.regexp punctuation.definition.string</string><key>settings</key><dict><key>fontStyle</key><string>bold</string></dict></dict>
+<dict><key>scope</key><string>keyword.control.anchor.regexp, keyword.control.flow.block-scalar.literal.yaml, storage.modifier.reference</string><key>settings</key><dict><key>fontStyle</key><string></string></dict></dict>
+<dict><key>scope</key><string>punctuation.definition.character-class.regexp</string><key>settings</key><dict><key>foreground</key><string>#71a3a8</string></dict></dict>
+<dict><key>scope</key><string>string.regexp.character-class, constant.character.escape, constant.other.character-class.regexp, string.regexp string.regexp.arbitrary-repitition, string.regexp constant.character.escape, constant.other.placeholder</string><key>settings</key><dict><key>foreground</key><string>#0585a8</string></dict></dict>
+<dict><key>scope</key><string>constant.numeric, constant.numeric.hex storage.type.number, number</string><key>settings</key><dict><key>foreground</key><string>#739900</string><key>fontStyle</key><string></string></dict></dict>
+<dict><key>scope</key><string>entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.pseudo-element.css, punctuation.definition.entity.css</string><key>settings</key><dict><key>foreground</key><string>#0585a8</string></dict></dict>
+<dict><key>scope</key><string>source.css variable</string><key>settings</key><dict><key>foreground</key><string>#127d52</string></dict></dict>
+<dict><key>scope</key><string>keyword.other.unit, punctuation.definition.constant.css</string><key>settings</key><dict><key>foreground</key><string>#0585a8</string></dict></dict>
+<dict><key>scope</key><string>source.css support.function</string><key>settings</key><dict><key>foreground</key><string>#726293</string></dict></dict>
+<dict><key>scope</key><string>constant.language.boolean, constant.language</string><key>settings</key><dict><key>foreground</key><string>#726293</string></dict></dict>
+<dict><key>scope</key><string>meta.module-reference</string><key>settings</key><dict><key>foreground</key><string>#0585a8</string></dict></dict>
+<dict><key>scope</key><string>entity.name.section</string><key>settings</key><dict><key>foreground</key><string>#726293</string></dict></dict>
+<dict><key>scope</key><string>punctuation.definition.list.begin.markdown</string><key>settings</key><dict><key>foreground</key><string>#71a3a8</string></dict></dict>
+<dict><key>scope</key><string>markup.heading, markup.heading entity.name</string><key>settings</key><dict><key>foreground</key><string>#726293</string><key>fontStyle</key><string>bold</string></dict></dict>
+<dict><key>scope</key><string>markup.quote</string><key>settings</key><dict><key>foreground</key><string>#127d52</string></dict></dict>
+<dict><key>scope</key><string>markup.italic</string><key>settings</key><dict><key>foreground</key><string>#c37522</string><key>fontStyle</key><string>italic</string></dict></dict>
+<dict><key>scope</key><string>markup.bold</string><key>settings</key><dict><key>foreground</key><string>#c37522</string><key>fontStyle</key><string>bold</string></dict></dict>
+<dict><key>scope</key><string>markup.inline.raw, fenced_code.block.language.markdown, fenced_code.block.language</string><key>settings</key><dict><key>foreground</key><string>#bd5151</string></dict></dict>
+<dict><key>scope</key><string>markup.deleted, punctuation.definition.deleted</string><key>settings</key><dict><key>foreground</key><string>#bd5151</string></dict></dict>
+<dict><key>scope</key><string>markup.inserted, punctuation.definition.inserted</string><key>settings</key><dict><key>foreground</key><string>#478f14</string></dict></dict>
+<dict><key>scope</key><string>markup.changed, punctuation.definition.changed</string><key>settings</key><dict><key>foreground</key><string>#aa830e</string></dict></dict>
+<dict><key>scope</key><string>markup.ignored, markup.untracked</string><key>settings</key><dict><key>foreground</key><string>#808080</string></dict></dict>
+<dict><key>scope</key><string>meta.diff.range</string><key>settings</key><dict><key>foreground</key><string>#726293</string><key>fontStyle</key><string>bold</string></dict></dict>
+<dict><key>scope</key><string>meta.diff.header</string><key>settings</key><dict><key>foreground</key><string>#0585a8</string></dict></dict>
+<dict><key>scope</key><string>meta.separator</string><key>settings</key><dict><key>foreground</key><string>#0585a8</string><key>fontStyle</key><string>bold</string></dict></dict>
+<dict><key>scope</key><string>meta.output</string><key>settings</key><dict><key>foreground</key><string>#0585a8</string></dict></dict>
+<dict><key>scope</key><string>brackethighlighter.tag, brackethighlighter.curly, brackethighlighter.round, brackethighlighter.square, brackethighlighter.angle, brackethighlighter.quote</string><key>settings</key><dict><key>foreground</key><string>#71a3a8</string></dict></dict>
+<dict><key>scope</key><string>brackethighlighter.unmatched</string><key>settings</key><dict><key>foreground</key><string>#bd5151</string></dict></dict>
+<dict><key>scope</key><string>constant.other.reference.link, string.other.link, punctuation.definition.string.begin.markdown, punctuation.definition.string.end.markdown, markup.heading.setext</string><key>settings</key><dict><key>foreground</key><string>#0585a8</string></dict></dict>
+<dict><key>scope</key><string>string.other.link.description, string.other.link.title</string><key>settings</key><dict><key>foreground</key><string>#478f14</string></dict></dict>
+<dict><key>scope</key><string>variable.other.link.underline</string><key>settings</key><dict><key>fontStyle</key><string>underline</string></dict></dict>
+<dict><key>scope</key><string>markup.underline.link.markdown, markup.underline.link.image.markdown</string><key>settings</key><dict><key>foreground</key><string>#0585a8</string><key>fontStyle</key><string>underline</string></dict></dict>
+<dict><key>scope</key><string>variable.parameter, variable.other.jsdoc, meta.import variable</string><key>settings</key><dict><key>foreground</key><string>#aa830e</string></dict></dict>
+<dict><key>scope</key><string>type.identifier, entity.other.inherited-class, entity.name.type.class, entity.name.type.module, meta.parameter.initialization</string><key>settings</key><dict><key>foreground</key><string>#c37522</string></dict></dict>
+<dict><key>scope</key><string>entity.name.section.group-title, support.type.property-name.table.toml</string><key>settings</key><dict><key>foreground</key><string>#726293</string></dict></dict>
+<dict><key>scope</key><string>support.class.component.js, support.class.component.ts, support.class.component.jsx, support.class.component.tsx, support.class.component.vue, support.class.component.svelte, support.class.component.astro</string><key>settings</key><dict><key>foreground</key><string>#127d52</string></dict></dict>
+<dict><key>scope</key><string>string.quoted.docstring.multi.python keyword.control</string><key>settings</key><dict><key>fontStyle</key><string></string></dict></dict>
+<dict><key>scope</key><string>invalid.illegal.unrecognized-tag.html</string><key>settings</key><dict><key>fontStyle</key><string></string></dict></dict>
+<dict><key>scope</key><string>source.vue meta.tag.other.unrecognized.html</string><key>settings</key><dict><key>foreground</key><string>#71a3a8</string><key>fontStyle</key><string></string></dict></dict>
+<dict><key>scope</key><string>keyword.control.directive, keyword.control.import, keyword.control.from, keyword.control.export, keyword.package, keyword.other.package, keyword.import, meta.use.rust keyword, variable.language.this, variable.language.super, keyword.operator.new, keyword.control.trycatch, storage.modifier.package, storage.modifier.import, keyword.operator.expression.import, keyword.operator.expression.infer, source.css keyword.other.important, keyword.other.using, keyword.control.at-rule.import.css, keyword.control.at-rule.import.scss, keyword.control.at-rule.import.less</string><key>settings</key><dict><key>foreground</key><string>#a65973</string></dict></dict>
+<dict><key>scope</key><string>source.css keyword.other.important, source.sass keyword.other.important, source.less keyword.other.important</string><key>settings</key><dict><key>fontStyle</key><string>bold</string></dict></dict>
+<dict><key>scope</key><string>keyword.control.import.python</string><key>settings</key><dict><key>foreground</key><string>#726293</string></dict></dict>
+<dict><key>scope</key><string>keyword.control.ternary.java</string><key>settings</key><dict><key>foreground</key><string>#a65973</string><key>fontStyle</key><string></string></dict></dict>
+<dict><key>scope</key><string>keyword.control, keyword.function, keyword.operator.new, keyword.operator.borrow.and.rust, storage.type, storage.modifier, variable.language.this</string><key>settings</key><dict><key>fontStyle</key><string>italic</string></dict></dict>
+<dict><key>scope</key><string>meta.decorator entity.name.function, meta.decorator variable.other.readwrite, meta.declaration storage.type.annotation.java</string><key>settings</key><dict><key>fontStyle</key><string>bold</string></dict></dict>
+<dict><key>scope</key><string>source.go storage.type</string><key>settings</key><dict><key>fontStyle</key><string></string></dict></dict>
+<dict><key>scope</key><string>keyword.channel.go</string><key>settings</key><dict><key>fontStyle</key><string>bold</string></dict></dict>
+<dict><key>scope</key><string>storage.type.function.arrow</string><key>settings</key><dict><key>fontStyle</key><string></string></dict></dict>
+<dict><key>scope</key><string>storage.type.java, punctuation.definition.string.template</string><key>settings</key><dict><key>fontStyle</key><string>bold</string></dict></dict>
+<dict><key>scope</key><string>source.java storage.type.primitive</string><key>settings</key><dict><key>fontStyle</key><string>bold</string></dict></dict>
+<dict><key>scope</key><string>source.java variable.parameter</string><key>settings</key><dict><key>fontStyle</key><string>underline</string></dict></dict>
+<dict><key>scope</key><string>storage.type.object.array.java, meta.class.java storage.type.java, entity.name.type.class.java</string><key>settings</key><dict><key>foreground</key><string>#c37522</string></dict></dict>
+<dict><key>scope</key><string>entity.name.namespace</string><key>settings</key><dict><key>foreground</key><string>#aa830e</string></dict></dict>
+<dict><key>scope</key><string>meta.jsx.children</string><key>settings</key><dict><key>foreground</key><string>#475569</string></dict></dict>
+<dict><key>scope</key><string>invalid.illegal.character-not-allowed-here.html, invalid.deprecated.entity.other.attribute-name.html</string><key>settings</key><dict><key>fontStyle</key><string></string></dict></dict>
+<dict><key>scope</key><string>source.nix invalid</string><key>settings</key><dict><key>foreground</key><string>#71a3a8</string><key>fontStyle</key><string></string></dict></dict>
+<dict><key>scope</key><string>source.nix invalid.illegal.reserved</string><key>settings</key><dict><key>foreground</key><string>#726293</string><key>fontStyle</key><string></string></dict></dict>
+<dict><key>scope</key><string>entity.name.type.rust</string><key>settings</key><dict><key>foreground</key><string>#c37522</string><key>fontStyle</key><string></string></dict></dict>
+<dict><key>scope</key><string>log.error</string><key>settings</key><dict><key>foreground</key><string>#bd5151</string></dict></dict>
+<dict><key>scope</key><string>log.warning</string><key>settings</key><dict><key>foreground</key><string>#aa830e</string></dict></dict>
+<dict><key>scope</key><string>log.info</string><key>settings</key><dict><key>foreground</key><string>#478f14</string></dict></dict>
+<dict><key>scope</key><string>log.debug</string><key>settings</key><dict><key>foreground</key><string>#0585a8</string></dict></dict>
+<dict><key>scope</key><string>log.verbose</string><key>settings</key><dict><key>foreground</key><string>#71a3a8</string></dict></dict>
+<dict><key>scope</key><string>log.date</string><key>settings</key><dict><key>foreground</key><string>#808080</string></dict></dict>
+</array></dict></plist>

@@ -1,5 +1,5 @@
 require("full-border"):setup()
-require("starship"):setup()
+-- require("starship"):setup()
 require("recycle-bin"):setup()
 require("git"):setup({
     order = 1500,

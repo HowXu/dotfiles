@@ -71,4 +71,3 @@ require("lualine").setup({
 
 -- 浅色行
 vim.o.cursorline = true
-vim.api.nvim_set_hl(0, "CursorLine", { bg = "#222222" })

@@ -1,2 +1,3 @@
 [flavor]
-dark = "dracula"
+dark = "maple-dark"
+light = "maple-light"

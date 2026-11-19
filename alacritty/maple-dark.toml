@@ -1,0 +1,32 @@
+# Maple dark · subframe7536/vscode-theme-maple (MIT)
+[colors.primary]
+background = "#1e1e1f"
+foreground = "#cbd5e1"
+
+[colors.cursor]
+text = "#1e1e1f"
+cursor = "#cbd5e1"
+
+[colors.selection]
+text = "#cbd5e1"
+background = "#475569"
+
+[colors.normal]
+black = "#333333"
+red = "#edabab"
+green = "#a4dfae"
+yellow = "#eecfa0"
+blue = "#8fc7ff"
+magenta = "#d2ccff"
+cyan = "#a1e8e5"
+white = "#f3f2f2"
+
+[colors.bright]
+black = "#666666"
+red = "#ffc4c4"
+green = "#bdf8c7"
+yellow = "#ffe8b9"
+blue = "#a8e0ff"
+magenta = "#ebe5ff"
+cyan = "#bafffe"
+white = "#ffffff"

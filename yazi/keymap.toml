@@ -196,9 +196,9 @@ prepend_keymap = [
   # =======================
   # 文件操作
   # =======================
-  { on = "o",         run = "plugin augment-command.open",                        desc = "打开选定文件" },
+  { on = "o",         run = "plugin augment-command.open -- --no-extract",         desc = "打开选定文件（压缩包使用系统工具）" },
   { on = "O",         run = "plugin augment-command.open -- --interactive",          desc = "交互式打开选定文件" },
-  { on = "<Enter>",   run = "plugin augment-command.open",                        desc = "打开选定文件" },
+  { on = "<Enter>",   run = "plugin augment-command.open -- --no-extract",         desc = "打开选定文件（压缩包使用系统工具）" },
   { on = "<S-Enter>", run = "plugin augment-command.open -- --interactive",          desc = "交互式打开选定文件" },
   { on = "y",         run = "yank",                        desc = "复制选定文件" },
   { on = "x",         run = "yank --cut",                  desc = "剪切选定文件" },
@@ -213,8 +213,9 @@ prepend_keymap = [
   { on = "d",         run = "plugin augment-command.remove",                      desc = "移动到回收站" },
   { on = "D",         run = "plugin augment-command.remove -- --permanently",        desc = "永久删除" },
   { on = "a",         run = "plugin augment-command.create",                      desc = "创建文件/目录（以/结尾创建目录）" },
-  { on = ";",         run = "plugin augment-command.shell -- --interactive",         desc = "运行交互式shell命令" },
-  { on = ":",         run = "plugin augment-command.shell -- --block --interactive", desc = "运行阻塞式shell命令" },
+  { on = ";",         run = "shell --interactive",         desc = "运行交互式shell命令" },
+  { on = ":",         run = "shell --block --interactive", desc = "运行阻塞式shell命令" },
+  { on = "T",         run = 'shell "$SHELL" --block',      desc = "在当前目录打开终端" },
   
   #================
   #重命名

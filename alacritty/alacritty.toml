@@ -1,4 +1,4 @@
-general.import = ["./cyberdream.toml"]
+general.import = ["./maple-dark.toml"]
 [window]
 dimensions = { columns = 120, lines = 40}
 title = "Terminal"

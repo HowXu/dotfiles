@@ -17,6 +17,7 @@ function M:entry(job)
 
 	-- Get the arguments and configuration for the plugin
 	local args, config = require("augment-command").parse_args_and_init(job)
+	local no_extract = utils.table_pop(args, "no_extract", false)
 
 	-- Call the function to get the item group
 	local item_group = utils.get_item_group(config)
@@ -53,6 +54,7 @@ function M:entry(job)
 		not require(".utils-archive").hovered_item_is_archive()
 		or not config.enter_archives
 		or args.interactive
+		or no_extract
 	then
 
 		-- Simply emit the open command,

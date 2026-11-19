@@ -21,6 +21,8 @@
 
 仅备份 `package.toml` 不足以恢复当前环境：部分插件是手动安装的，且有本地修改。当前定制包括预览区比例 `[1, 5, 2]`、`q` 直接退出、Markdown 预览 API 兼容修复；Starship 插件保持启用。
 
+压缩包按 `o` 或回车通过 `xdg-open` 调用系统默认归档管理器（本机为 File Roller）；`l` 和右方向键保留原来的浏览／解压流程。此行为依赖 `augment-command.open` 的本地 `--no-extract` 参数和 `yazi.toml` 中的压缩包打开规则，更新插件时需要保留这项修改。
+
 ## 不纳入 Git 的内容
 
 `.gitignore` 排除以下运行数据：

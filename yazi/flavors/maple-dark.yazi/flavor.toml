@@ -1,0 +1,87 @@
+# Maple dark · subframe7536/vscode-theme-maple (MIT)
+
+[app]
+overall = { fg = "#cbd5e1", bg = "#1e1e1f" }
+
+[mgr]
+cwd = { fg = "#8fc7ff" }
+border_style = { fg = "#44444b" }
+find_keyword = { fg = "#a4dfae", bold = true }
+find_position = { fg = "#d2ccff" }
+marker_copied = { fg = "#a4dfae", bg = "#a4dfae" }
+count_copied = { fg = "#1e1e1f", bg = "#a4dfae" }
+marker_cut = { fg = "#edabab", bg = "#edabab" }
+count_cut = { fg = "#1e1e1f", bg = "#edabab" }
+marker_marked = { fg = "#a1e8e5", bg = "#a1e8e5" }
+marker_selected = { fg = "#eecfa0", bg = "#eecfa0" }
+count_selected = { fg = "#1e1e1f", bg = "#eecfa0" }
+
+[indicator]
+current = { fg = "#cbd5e1", bg = "#475569" }
+parent = { fg = "#cbd5e1", bg = "#475569" }
+preview = { fg = "#8fc7ff", underline = true }
+
+[tabs]
+active = { fg = "#1e1e1f", bg = "#8fc7ff", bold = true }
+inactive = { fg = "#cbd5e1", bg = "#232a39" }
+
+[mode]
+normal_main = { fg = "#1e1e1f", bg = "#8fc7ff", bold = true }
+normal_alt = { fg = "#8fc7ff", bg = "#232a39" }
+select_main = { fg = "#1e1e1f", bg = "#d2ccff", bold = true }
+select_alt = { fg = "#d2ccff", bg = "#232a39" }
+unset_main = { fg = "#1e1e1f", bg = "#eecfa0", bold = true }
+unset_alt = { fg = "#eecfa0", bg = "#232a39" }
+
+[status]
+overall = { fg = "#cbd5e1", bg = "#171718" }
+perm_sep = { fg = "#999999" }
+perm_type = { fg = "#d2ccff" }
+perm_read = { fg = "#eecfa0" }
+perm_write = { fg = "#edabab" }
+perm_exec = { fg = "#a4dfae" }
+progress_normal = { fg = "#a4dfae", bg = "#232a39" }
+progress_error = { fg = "#1e1e1f", bg = "#edabab" }
+
+[pick]
+border = { fg = "#8fc7ff" }
+
+[input]
+border = { fg = "#8fc7ff" }
+
+[cmp]
+border = { fg = "#8fc7ff" }
+
+[confirm]
+border = { fg = "#8fc7ff" }
+
+[tasks]
+border = { fg = "#8fc7ff" }
+
+[help]
+border = { fg = "#8fc7ff" }
+
+[spot]
+border = { fg = "#8fc7ff" }
+
+[which]
+border = { fg = "#8fc7ff" }
+mask = { fg = "#cbd5e1", bg = "#232a39" }
+cand = { fg = "#a1e8e5" }
+rest = { fg = "#999999" }
+desc = { fg = "#d2ccff" }
+
+[notify]
+title_info = { fg = "#8fc7ff" }
+title_warn = { fg = "#eecfa0" }
+title_error = { fg = "#edabab" }
+
+[filetype]
+rules = [
+  { url = "*", is = "orphan", fg = "#edabab" },
+  { url = "*", is = "exec", fg = "#a4dfae" },
+  { mime = "**/image/*", fg = "#a1e8e5" },
+  { mime = "**/{audio,video}/*", fg = "#d2ccff" },
+  { mime = "**/application/{zip,rar,7z*,tar,gzip,xz,zstd}", fg = "#eecfa0" },
+  { url = "*/", fg = "#8fc7ff" },
+]

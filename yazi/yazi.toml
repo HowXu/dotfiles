@@ -14,6 +14,16 @@ wrap = "yes"
 image_filter = "lanczos3"
 max_size = 10485760
 
+[opener]
+system-archive = [
+    { run = "xdg-open %s1", desc = "系统压缩工具", for = "linux", orphan = true },
+]
+
+[open]
+prepend_rules = [
+    { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", use = ["system-archive", "extract", "reveal"] },
+]
+
 # ================================
 # Plugin Fetchers
 # ================================

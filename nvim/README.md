@@ -4,7 +4,7 @@
 
 ## 特性
 
-- **主题**: cyberdream + transparent
+- **主题**: Maple Dark（`:colorscheme maple-light` 切换浅色）
 - **补全**: blink.cmp（Tab 接受补全，Enter 不自动补全）
 - **LSP**: 优化某些 LSP 的表现
 - **Git**: Neogit（`Space gg` 打开）

@@ -78,7 +78,7 @@ set timeoutlen=20
 " 状态栏
 set laststatus=2
 let g:lightline = {
-\  'colorscheme': 'sonokai',
+\  'colorscheme': 'maple',
 \}
 
 " 语法匹配
@@ -89,7 +89,12 @@ let g:sonokai_better_performance = 1
 
 let g:github_colors_soft = 1
 let g:github_colors_block_diffmark = 1
-colorscheme sonokai
+" Use the bundled themes when this vimrc is linked directly to dotfiles.
+let s:maple_runtime = fnamemodify(resolve(expand('<sfile>:p')), ':h') . '/vim'
+if isdirectory(s:maple_runtime . '/colors')
+  execute 'set runtimepath^=' . fnameescape(s:maple_runtime)
+endif
+colorscheme maple-dark
 
 " ALE Settings
 " 彻底关闭 lint 功能（所有触发条件都设为 never）
