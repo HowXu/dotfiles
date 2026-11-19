@@ -215,7 +215,7 @@ prepend_keymap = [
   { on = "a",         run = "plugin augment-command.create",                      desc = "创建文件/目录（以/结尾创建目录）" },
   { on = ";",         run = "shell --interactive",         desc = "运行交互式shell命令" },
   { on = ":",         run = "shell --block --interactive", desc = "运行阻塞式shell命令" },
-  { on = "T",         run = 'shell "$SHELL" --block',      desc = "在当前目录打开终端" },
+  { on = "T",         run = "shell --orphan 'alacritty --working-directory .'", desc = "在当前目录打开独立 Alacritty 窗口" },
   
   #================
   #重命名
