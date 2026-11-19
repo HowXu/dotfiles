@@ -32,7 +32,7 @@ return {
         end
       end
 
-      local version_text = ("NVIM v%d.%d.%d%s"):format(version.major, version.minor, version.patch, prerelease_suffix)
+      local version_text = ("NVIM v%d.%d.%d%s For HowXu"):format(version.major, version.minor, version.patch, prerelease_suffix)
       local news_text = ("v%d.%d news here!"):format(version.major, version.minor)
 
       -- Ensure dashboard is initialized
@@ -63,7 +63,7 @@ return {
           },
         },
         { padding = 0 },
-        { align = "center", text = { { version_text, hl = "String" } } },
+        { align = "center", text = { { version_text , hl = "String" } } },
         { padding = 0 },
         { align = "center", text = "Nvim is open source and freely distributable" },
         {
