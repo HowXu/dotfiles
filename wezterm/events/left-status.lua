@@ -8,9 +8,10 @@ local GLYPH_SEMI_CIRCLE_RIGHT = nf.ple_right_half_circle_thick --[[ '' ]]
 local GLYPH_KEY_TABLE = nf.md_table_key --[[ '󱏅' ]]
 local GLYPH_KEY = nf.md_key --[[ '󰌆' ]]
 
+local tabs = require('colors.maple').tab_bar
 local colors = {
-   glyph_semi_circle = { bg = 'rgba(0, 0, 0, 0.4)', fg = '#fab387' },
-   text = { bg = '#fab387', fg = '#1c1b19' },
+   glyph_semi_circle = { bg = tabs.background, fg = tabs.active_tab.bg_color },
+   text = { bg = tabs.active_tab.bg_color, fg = tabs.active_tab.fg_color },
 }
 
 local __cells__ = {}

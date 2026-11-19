@@ -3,14 +3,7 @@ local wezterm = require('wezterm')
 local M = {}
 local __cells__ = {}
 
--- Active tab: peach (mocha.peach) bg + dark fg
--- Inactive:  surface0 bg + subtext1 fg
--- Hover:     surface1 bg + text fg
-local colors = {
-   default = { bg = '#313244', fg = '#a6adc8' },
-   is_active = { bg = '#fab387', fg = '#1e1e2e' },
-   hover = { bg = '#45475a', fg = '#cdd6f4' },
-}
+local tabs = require('colors.maple').tab_bar
 
 local _push = function(bg, fg, attr, text)
    table.insert(__cells__, { Background = { Color = bg } })
@@ -29,14 +22,8 @@ M.setup = function()
    wezterm.on('format-tab-title', function(tab, _tabs, _panes, _config, hover, max_width)
       __cells__ = {}
 
-      local bg, fg
-      if tab.is_active then
-         bg, fg = colors.is_active.bg, colors.is_active.fg
-      elseif hover then
-         bg, fg = colors.hover.bg, colors.hover.fg
-      else
-         bg, fg = colors.default.bg, colors.default.fg
-      end
+      local style = tab.is_active and tabs.active_tab or (hover and tabs.inactive_tab_hover or tabs.inactive_tab)
+      local bg, fg = style.bg_color, style.fg_color
 
       local process_name = _process_name(tab.active_pane.foreground_process_name)
       local pane_title = tab.active_pane.title or ''

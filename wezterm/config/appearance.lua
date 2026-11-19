@@ -1,4 +1,4 @@
-local colors = require('colors.custom')
+local colors = require('colors.maple')
 
 return {
    animation_fps = 60,
@@ -37,10 +37,10 @@ return {
    },
    window_close_confirmation = 'NeverPrompt',
    window_frame = {
-      active_titlebar_bg = '#1f1f28',     -- matches colors.custom background (mocha.base)
-      inactive_titlebar_bg = '#1f1f28',
-      active_titlebar_fg = '#dbe7f3',
-      inactive_titlebar_fg = '#9fb0c4',
+      active_titlebar_bg = colors.tab_bar.background,
+      inactive_titlebar_bg = colors.tab_bar.background,
+      active_titlebar_fg = colors.foreground,
+      inactive_titlebar_fg = colors.tab_bar.inactive_tab.fg_color,
       font_size = 13,   -- smaller text fits 'pwsh.exe' in title bar
    },
    inactive_pane_hsb = {

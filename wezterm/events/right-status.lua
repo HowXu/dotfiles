@@ -31,13 +31,14 @@ local charging_icons = {
    nf.md_battery_charging,
 }
 
+local theme = require('colors.maple')
 local colors = {
-   date_fg = '#fab387',
-   date_bg = '#1f1f28',     -- matches titlebar / tab bar / terminal bg
-   battery_fg = '#f9e2af',
-   battery_bg = '#1f1f28',
-   separator_fg = '#74c7ec',
-   separator_bg = '#1f1f28',
+   date_fg = theme.tab_bar.active_tab.bg_color,
+   date_bg = theme.tab_bar.background,
+   battery_fg = theme.ansi[4],
+   battery_bg = theme.tab_bar.background,
+   separator_fg = theme.ansi[7],
+   separator_bg = theme.tab_bar.background,
 }
 
 local __cells__ = {} -- wezterm FormatItems (ref: https://wezfurlong.org/wezterm/config/lua/wezterm/format.html)

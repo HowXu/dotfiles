@@ -1,40 +1,66 @@
+palette = "maple_dark" # maple_dark / maple_light
+
 format = """
-[\u250c](white bold)\
-[\u2591\u2592\u2593](#a3aed2)\
-[ \ue62a  $shell](bg:#a3aed2 fg:#090c0c)\
-[\ue0b4](bg:#91ddff fg:#a3aed2)\
-[ \uf2c0 ](fg:#000000 bg:#91ddff)\
+[\u250c](text bold)\
+[\u2591\u2592\u2593](shell_bg)\
+[ \ue62a  $shell](bg:shell_bg fg:base)\
+[\ue0b4](bg:host_bg fg:shell_bg)\
+[ \uf2c0 ](fg:base bg:host_bg)\
 $hostname\
 $username\
-[\ue0b4](bg:#769ff0 fg:#91ddff)\
+[\ue0b4](bg:env_bg fg:host_bg)\
 $conda\
-[\ue0b4](fg:#769ff0 bg:#394260)\
+[\ue0b4](fg:env_bg bg:git_bg)\
 $git_branch\
 $git_status\
-[\ue0b4](fg:#394260 bg:#212736)\
-[\ue0b4](fg:#212736 bg:#1d2230)\
+[\ue0b4](fg:git_bg bg:bridge_bg)\
+[\ue0b4](fg:bridge_bg bg:clock_bg)\
 $time\
-[\ue0b4](fg:#1d2230)\
-\n[\u2514](white bold)\
-[ \ueb06 at](white bold)\
+[\ue0b4](fg:clock_bg)\
+\n[\u2514](text bold)\
+[ \ueb06 at](text bold)\
 $directory
 $character"""
 
 add_newline = false
 
+[palettes.maple_dark]
+text = "#cbd5e1"
+base = "#1e1e1f"
+shell_bg = "#d2ccff"
+host_bg = "#a1e8e5"
+env_bg = "#8fc7ff"
+git_bg = "#2d3a4b"
+bridge_bg = "#475569"
+clock_bg = "#171718"
+success = "#a4dfae"
+failure = "#edabab"
+
+[palettes.maple_light]
+text = "#475569"
+base = "#fffffe"
+shell_bg = "#726293"
+host_bg = "#127d52"
+env_bg = "#057d9e"
+git_bg = "#e9efe3"
+bridge_bg = "#dee4d8"
+clock_bg = "#fafaf9"
+success = "#547000"
+failure = "#bd5151"
+
 [hostname]
 format = '[$ssh_symbol$hostname@]($style)'
 ssh_only = false
-style = 'fg:#000000 bg:#91ddff'
+style = 'fg:base bg:host_bg'
 
 [username]
 format = '[$user]($style)'
 show_always = true
-style_user = "fg:#000000 bg:#91ddff"
-style_root = "fg:#red bg:#91ddff"
+style_user = "fg:base bg:host_bg"
+style_root = "fg:base bold underline bg:host_bg"
 
 [directory]
-style = "fg:#e3e5e5"
+style = "fg:text"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -47,28 +73,28 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = "\uf418"
-style = "bg:#394260"
-format = '[[ $symbol $branch ](fg:#769ff0 bg:#394260)]($style)'
+style = "bg:git_bg"
+format = '[[ $symbol $branch ](fg:env_bg bg:git_bg)]($style)'
 
 [git_status]
-style = "bg:#394260"
-format = '[[($all_status$ahead_behind )](fg:#769ff0 bg:#394260)]($style)'
+style = "bg:git_bg"
+format = '[[($all_status$ahead_behind )](fg:env_bg bg:git_bg)]($style)'
 
 [conda]
 symbol = "\ue7a8"
 format = '[ PyEnv $environment]($style)'
-style = 'bg:#769ff0 fg:white bold'
+style = 'bg:env_bg fg:base bold'
 ignore_base = false
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:#1d2230"
-format = '[[$time](fg:#a0a9cb bg:#1d2230)]($style)'
+style = "bg:clock_bg"
+format = '[[$time](fg:text bg:clock_bg)]($style)'
 
 [character]
-success_symbol = '[❯](bold green)'
-error_symbol = '[❯](bold red)'
+success_symbol = '[❯](bold success)'
+error_symbol = '[❯](bold failure)'
 
 [shell]
 disabled = false
@@ -77,4 +103,4 @@ fish_indicator = "Fish"
 zsh_indicator = "Zsh"
 nu_indicator = "NuShell"
 pwsh_indicator = "Pwsh"
-style = 'bg:#a3aed2 fg:FFFFFF'
+style = 'bg:shell_bg fg:base'
