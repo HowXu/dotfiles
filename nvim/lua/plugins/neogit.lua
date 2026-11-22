@@ -2,8 +2,16 @@ return {
   "NeogitOrg/neogit",
   lazy = true,
   dependencies = {
-    -- Only one of these is needed.
-    "sindrets/diffview.nvim",        -- optional
+    {
+      "sindrets/diffview.nvim",
+      opts = {
+        keymaps = {
+          view = { { "n", "q", "<cmd>DiffviewClose<cr>" } },
+          file_panel = { { "n", "q", "<cmd>DiffviewClose<cr>" } },
+          file_history_panel = { { "n", "q", "<cmd>DiffviewClose<cr>" } },
+        },
+      },
+    },
   },
   cmd = "Neogit",
   keys = {
