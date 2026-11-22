@@ -81,6 +81,7 @@ binds {
     // === Window Management ===
     Mod+Q repeat=false { close-window; }
     Mod+F { maximize-column; }
+    Mod+Alt+F { maximize-window-to-edges; }
     Mod+Shift+F { fullscreen-window; }
     Mod+Shift+T { toggle-window-floating; }
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
@@ -223,8 +224,13 @@ binds {
     XF86Launch1 { screenshot; }
     Ctrl+XF86Launch1 { screenshot-screen; }
     Alt+XF86Launch1 { screenshot-window; }
-    Alt+Z { screenshot; }
-    Alt+Shift+Z { screenshot-screen; }
+    Alt+Z repeat=false hotkey-overlay-title="Screenshot to clipboard" {
+        spawn-sh r#"region="$(slurp -d)" && grim -g "$region" - | wl-copy --type image/png"#;
+    }
+    Alt+Shift+Z { screenshot-screen write-to-disk=false; }
+    Alt+E repeat=false hotkey-overlay-title="Edit clipboard image (Satty)" {
+        spawn-sh r#"wl-paste --list-types | grep -q '^image/' && wl-paste --no-newline --type image | satty -f - --initial-tool=arrow --copy-command=wl-copy --actions-on-escape="save-to-clipboard,exit" --brush-smooth-history-size=5 --disable-notifications"#;
+    }
     // Alt+Z { screenshot-window; }
     // === Display Profiles ===
     Mod+P hotkey-overlay-title="Cycle Display Profile" {

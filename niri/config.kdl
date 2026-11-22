@@ -292,6 +292,12 @@ recent-windows {
     }
 }
 
+binds {
+    Mod+E repeat=false hotkey-overlay-title="Open Yazi" {
+        spawn "/usr/bin/gio" "launch" "/home/howxu/.local/share/applications/yazi.desktop";
+    }
+}
+
 // Include dms files
 include "dms/colors.kdl"
 include "dms/layout.kdl"

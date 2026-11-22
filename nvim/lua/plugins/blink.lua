@@ -1,9 +1,12 @@
 return {
   "saghen/blink.cmp",
+  version = "*",
   opts = {
     keymap = {
       ["<Tab>"] = { "accept", "fallback" },
       ["<CR>"] = {  "fallback" },
+      ["<PageUp>"] = { function(cmp) return cmp.is_menu_visible() and cmp.select_prev({ count = 5 }) end, "fallback" },
+      ["<PageDown>"] = { function(cmp) return cmp.is_menu_visible() and cmp.select_next({ count = 5 }) end, "fallback" },
     },
     completion = {
       ghost_text = { enabled = false },
