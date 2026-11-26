@@ -4,9 +4,11 @@ if vim.fn.argc(-1) == 1 and vim.fn.isdirectory(vim.fn.argv(0)) == 1 then
   vim.api.nvim_create_autocmd("VimEnter", {
     once = true,
     callback = function()
-      if (vim.bo.filetype == "netrw" or vim.bo.filetype == "directory") and #vim.api.nvim_list_uis() > 0 then
+      if vim.bo.filetype == "directory" and #vim.api.nvim_list_uis() > 0 then
+        local dirbuf = vim.api.nvim_get_current_buf()
         vim.api.nvim_set_current_dir(dir)
         Snacks.dashboard.open({ win = 0 })
+        vim.api.nvim_buf_delete(dirbuf, {})
       end
     end,
   })
