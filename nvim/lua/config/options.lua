@@ -44,6 +44,7 @@ vim.opt.guicursor = "n-v-c-sm-i-ci-ve-r-cr-o:block"
 if vim.fn.has("win32") then
   vim.o.shell = "nu.exe"
 end
+vim.o.shell = "fish"
 
 if vim.g.neovide then
   -- neovide config

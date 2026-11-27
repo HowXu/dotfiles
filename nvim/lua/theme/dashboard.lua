@@ -63,7 +63,7 @@ return {
           },
         },
         { padding = 0 },
-        { align = "center", text = { { version_text , hl = "String" } } },
+        { align = "center", text = { { version_text, hl = "String" } } },
         { padding = 0 },
         { align = "center", text = "Nvim is open source and freely distributable" },
         {

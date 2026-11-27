@@ -18,7 +18,10 @@ return {
             "--limit-references=1000",
             "--limit-results=100",
             "--query-driver=g*",
-            "--fallback-style=Google",
+            "--fallback-style=Microsoft",
+          },
+          init_options = {
+            fallbackFlags = { "-std=c++20" },
           },
         },
       },

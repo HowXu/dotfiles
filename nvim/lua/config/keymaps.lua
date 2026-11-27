@@ -9,6 +9,22 @@ vim.keymap.set("n", "q", "<Nop>")
 vim.keymap.del("n", "H")
 vim.keymap.del("n", "L")
 
+vim.keymap.set("n", "<C-Left>", "<C-w>h", { desc = "焦点移到左侧窗口" })
+vim.keymap.set("n", "<C-Right>", "<C-w>l", { desc = "焦点移到右侧窗口" })
+vim.keymap.set("n", "<C-Up>", "<C-w>k", { desc = "焦点移到上方窗口" })
+vim.keymap.set("n", "<C-Down>", "<C-w>j", { desc = "焦点移到下方窗口" })
+
+local function resize_explorer(delta)
+  local explorer = Snacks.picker.get({ source = "explorer" })[1]
+  if explorer then
+    local win = explorer.layout.root.win
+    vim.api.nvim_win_set_width(win, math.max(1, vim.api.nvim_win_get_width(win) + delta))
+  end
+end
+
+vim.keymap.set("n", "<C-S-h>", function() resize_explorer(2) end, { desc = "加宽 Explorer" })
+vim.keymap.set("n", "<C-S-l>", function() resize_explorer(-2) end, { desc = "收窄 Explorer" })
+
 -- MiniMap quick
 vim.keymap.set('n', '<leader>m', '<Nop>', { desc = "MiniMap Quick Set" })
 vim.keymap.set('n', '<leader>md', '<cmd>Neominimap Disable<CR>', { desc = "Disable Neominimap" })
