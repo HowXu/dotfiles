@@ -48,17 +48,31 @@ end
 if vim.g.neovide then
   -- neovide config
 
-  vim.o.guifont = "Maple Mono NF CN" -- text below applies for VimScript
-  vim.g.neovide_scale_factor = 0.85
-
-  vim.g.neovide_opacity = 0.85
-  vim.g.neovide_normal_opacity = 0.85
+  vim.g.neovide_opacity = 1.0
+  vim.g.neovide_normal_opacity = 1.0
+  vim.g.neovide_fill_bottom_background = false
+  vim.o.linespace = 1
 
   vim.g.neovide_theme = "light"
 
   vim.g.neovide_refresh_rate_idle = 5
 
   vim.g.neovide_refresh_rate = 60
+
+  local modes = { "n", "v", "i", "c", "t" }
+  local function zoom_by(factor)
+    return function()
+      vim.g.neovide_scale_factor = math.max(0.25, (vim.g.neovide_scale_factor or 1) * factor)
+    end
+  end
+  for _, key in ipairs({ "<C-=>", "<C-+>" }) do
+    vim.keymap.set(modes, key, zoom_by(1.1), { desc = "放大字号" })
+  end
+  vim.keymap.set(modes, "<C-->", zoom_by(1 / 1.1), { desc = "缩小字号" })
+  vim.keymap.set(modes, "<C-0>", function()
+    vim.g.neovide_scale_factor = 1
+  end, { desc = "恢复默认字号" })
+
   -- so fucking my keyboard do not have F11
   vim.keymap.set("n", "<M-CR>", function()
     vim.g.neovide_fullscreen = not vim.g.neovide_fullscreen
