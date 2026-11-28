@@ -5,6 +5,10 @@
 -- No macro
 vim.keymap.set("n", "q", "<Nop>")
 
+vim.keymap.set("n", "<M-w>", function()
+  Snacks.bufdelete()
+end, { desc = "关闭当前 buffer" })
+
 -- 恢复 H/L 在当前窗口内的原生移动。
 vim.keymap.del("n", "H")
 vim.keymap.del("n", "L")
